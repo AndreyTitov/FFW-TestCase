@@ -1,1 +1,1 @@
-[Live demo] (https://andreytitov.github.io/FFW-TestCase/dist)
+[Live demo](https://andreytitov.github.io/FFW-TestCase/dist)
