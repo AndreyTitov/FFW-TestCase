@@ -1,5 +1,6 @@
 var tabsLink;
 var tabsContent;
+var main = document.getElementById('main');
 
 window.onload = function () {
     tabsLink = document.querySelectorAll('.header-nav__link');
@@ -15,7 +16,7 @@ function hideTabs(a) {
     }
 }
 
-document.getElementById('main').onclick = function(e) {
+main.onclick = function(e) {
     var target = e.target;
     if(target.className == 'header-nav__link') {
         for(var i = 0; i < tabsLink.length; i++) {
