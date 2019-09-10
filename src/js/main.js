@@ -1,12 +1,19 @@
+/* Set variables */
+
 var tabsLink;
 var tabsContent;
 var main = document.getElementById('main');
+
+
+/* Get Tabs and TabsContent also hiding Tabs */
 
 window.onload = function () {
     tabsLink = document.querySelectorAll('.header-nav__link');
     tabsContent = document.querySelectorAll('.tab-content');
     hideTabs(1);
 }
+
+/* Hiding tabs */
 
 function hideTabs(a) {
     for(var i = a; i < tabsContent.length; i++) {
@@ -15,6 +22,8 @@ function hideTabs(a) {
         tabsLink[i].classList.remove('active');
     }
 }
+
+/* Finding a current Tab and show content */
 
 main.onclick = function(e) {
     var target = e.target;
@@ -27,6 +36,8 @@ main.onclick = function(e) {
         }
     }
 };
+
+/* Show TabsContent */
 
 function showTabsContent(b) {
     if(tabsContent[b].classList.contains('close')) {
